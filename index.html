@@ -30,7 +30,7 @@
     }
 
     header h1 {
-      font-size: 79px;
+      font-size: 130px;
       letter-spacing: 2px;
       color: palegreen;
     }
@@ -80,22 +80,63 @@
     /* Blikání kurzoru */
     @keyframes blink {
       50% { border-color: transparent; }
+
+      
     }
+    .pulse:hover{
+      color: darkcyan;
+      animation: pulse 2s;
+      bottom: 6%;
+      font-weight: 1200;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    @keyframes pulse{
+      0%{transform: scale(1);}
+      
+      100%{transform: scale(2);}
+    }
+
+.blinking-text {
+  animation: blink 1s infinite;
+}
+.baf{
+display: inline-block;
+font-size: 30px;
+color: aquamarine;
+left: 43.25%;
+transform: translateX(-50%);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+bottom: -7%;
+
+position: absolute;
+text-align: center;
+animation: Ahoj 2s infinite alternate;
+}
+@keyframes Ahoj {
+  0% {transform: scale(1) translateY(0); color:greenyellow;}
+  25% {transform: scale(1.2) translateY(-2px); color: green;}
+  50% {transform: scale(1) translateY(0); color: rgb(20, 177, 143)}
+  70% {transform: scale(1.2) translateY(-2px); color:lightskyblue;}
+  100% {transform: scale(1) translateY(0); color: rgb(32, 43, 78);}
+}
   </style>
 </head>
 <body>
   <header>
     <h1>Srncez</h1>
     
-    <p>Odkazy</p>
+    <p class="pulse">Odkazy</p>
+   
   </header>
-
+<div>
   <section class="gallery">
     <a href="https://www.instagram.com/jakub_rajsigl/" target="_blank"><img src="fdas.jpg" alt="Instagram"></a>
     <a href="https://steamcommunity.com/id/srncez/" target="_blank"><img src="sss.jpg" alt="Steam"></a>
    <a href="https://www.tiktok.com/@_srnc.ez_?lang=cs-CZ" target="_blank"><img src="sdddd.jpg" alt="Tiktok"></a> 
    <a href="https://x.com/srncez" target="_blank"> <img src="XXX.jpg" alt="X"></a>
   </section>
+  <h2 class="baf">More to be added</h2>
+</div>
 
   <footer>
     ©Srncez 💚💚
