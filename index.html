@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srncez Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sixtyfour&display=swap" rel="stylesheet">
+  <link rel="icon" href="ShrekIMG.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Press Start' 2p, cursive;
+      background-color: #111;
+      color: #fff;
+      overflow-x: hidden;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 100px;
+    }
+
+    header h1 {
+      font-size: 79px;
+      letter-spacing: 2px;
+      color: palegreen;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #aaa;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 20px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+    h1{
+      display: inline-block;      /* nutné pro přesné centrum */
+      font-size: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;          /* text je zarovnán uprostřed */
+      animation: typing 3s steps(25) 1s infinite alternate, blink 0.7s step-end infinite;
+    }
+     @keyframes typing {
+       0% { width: 0; }
+      to { width: 25ch; } /* počet znaků textu */
+    }
+
+    /* Blikání kurzoru */
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Srncez</h1>
+    
+    <p>Odkazy</p>
+  </header>
+
+  <section class="gallery">
+    <a href="https://www.instagram.com/jakub_rajsigl/" target="_blank"><img src="fdas.jpg" alt="Instagram"></a>
+    <a href="https://steamcommunity.com/id/srncez/" target="_blank"><img src="sss.jpg" alt="Steam"></a>
+   <a href="https://www.tiktok.com/@_srnc.ez_?lang=cs-CZ" target="_blank"><img src="sdddd.jpg" alt="Tiktok"></a> 
+   <a href="https://x.com/srncez" target="_blank"> <img src="XXX.jpg" alt="X"></a>
+  </section>
+
+  <footer>
+    ©Srncez 💚💚
+  </footer>
+</body>
+</html>
